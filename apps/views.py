@@ -89,3 +89,4 @@ class UserSubscriptionViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return UserSubscription.objects.filter(user=self.request.user)
 
+
