@@ -3,7 +3,7 @@ services:
     name: apps
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn config.wsgi:application"
+    startCommand: "gunicorn academy_test.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: config.settings
